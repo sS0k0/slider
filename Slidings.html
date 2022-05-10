@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+	<!-- THIS IS THE MY SLIDINGS PAGE -->
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+	<title>Slider</title>
+
+	<link type="text/css" rel="stylesheet" href="StyleSheet.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	
+	<script src="jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="JavaScriptSheet.js"></script>
+
+</head>
+
+
+<body>
+	
+<!--This is for the Header-->
+		<div class="header-wrapper"> 
+		<header>
+			<div class="sliderlogo">
+				<a id="logo" href="index.html"><img src="sliderlogo.png" alt="Slider Logo"></a>
+			</div>
+
+			<p id="slider-title">Slider</p>
+
+	<!-- THIS IS FOR THE TABS MENU -->
+			<nav class="dropdown-menu">
+				<ul class="nav-links">
+					<li id="not-highlighted-page1"><a href="index.html">Browse</a></li>
+					
+					<li id="highlighted-page"><a href="Slidings.html">Slidings</a></li>
+
+					<li id="not-highlighted-page3"><a href="Community.html">Community</a></li>
+				</ul>
+			</nav>
+
+			<nav class="search-profile">
+				
+				<div class="search-box">
+					<input class="search-text" type="text" name="" placeholder="Movies, Shows, People">
+
+					<a class="search-btn" href="#"><i class="fas fa-search" id="actual-search-icon"></i></a>
+
+				</div>
+
+				<ul class="profile-icon">
+					<li id="profile-icon"><a href="Profile.html"><i class="fas fa-user fa-sm" id="actual-profile-icon"></i></a>
+						<ul id="profile-dropdown-border">
+							<li><a href="#">Account</a></li>
+							<li><a href="#">Friends</a></li>
+							<li><a href="Settings.html">Settings</a></li>
+							<li><a href="About.html">About Slider</a></li>
+						</ul>
+					</li>
+				</ul>
+
+		</header>
+	</div>
+
+	<!-- This is for the table of rankings -->
+		<div class="rankings-table-div-div">
+
+			<div class="rankings-title-div">
+				<div class="item-title-box" id="top-rankings-title-box">
+					<p class="item-title-text" id="rankings-title-text">TOP SLIDINGS</p>
+				</div>
+				<div class="item-title-box" id="my-rankings-title-box">
+					<p class="item-title-text" id="rankings-title-text">MY SLIDINGS</p>
+				</div>
+			</div>
+
+			<div class="rankings-table-div" id="top-rankings-table-div">
+				<table id="ranking-table">
+					<thead>
+						<tr class="tableRow" id="table-header">
+							<th id="ranknumhead"></th>
+							<th id="ranking-type"><div class="headerTitlesDiv" id="image-header"></div></th>
+							<th id="ranking-initial-rating"><div class="headerTitlesDiv" id="rawscore-title">RAW SCORE</div></th>
+							<th id="ranking-writing"><div class="headerTitlesDiv" id="writing-title">WRITING</div></th>
+							
+							<th id="ranking-art-style"><div class="headerTitlesDiv" id="artstyle-design-title">ART STYLE DESIGN</div></th>
+							<th id="ranking-animation"><div class="headerTitlesDiv" id="animation-cinematography-title">ANIMATION CINEMATOGRAPHY</div></th>
+							<th id="ranking-music"><div class="headerTitlesDiv" id="music-title">MUSIC</div></th>
+							<th id="ranking-total"><div class="headerTitlesDiv" id="total-title">TOTAL</div></th>
+						</tr>
+					</thead>
+					<tbody id="rankings-table-body">
+						<tr id="addNewRankingButtonDiv">
+							<td class="ranknum"></td>
+							<td class="col1 row0 row-even"><div class="addNewRankingButton" id="addNewTopRankingButton"><i class="far fa-plus-square"></i></div></td>
+							
+						</tr>
+						<tr class="tableRow">
+							<td class="ranknum"><p class="rankactualnumber">1</p></td>
+							<td class="col1 row1 row-odd"><img src="LaLaLandPoster.jpg"></td>
+							<td class="col2 row1 row-odd">
+								<div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col3 row1 row-odd">
+								<div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col4 row1 row-odd"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col5 row1 row-odd"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col6 row1 row-odd"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col7 row1 row-odd"><div class="unadjustedScore">0</div><div id="score-divider">|</div><div class="adjustedScore">0</div></td>
+						</tr>
+						<tr class="tableRow">
+							<td class="ranknum"><p class="rankactualnumber">2</p></td>
+							<td class="col1 row2 row-even"><img src="MadMaxFuryRoadPoster.jpg"></td>
+							<td class="col2 row2 row-even"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col3 row2 row-even">
+								<div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							
+							<td class="col4 row2 row-even"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col5 row2 row-even"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col6 row2 row-even"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col7 row2 row-even"><div class="unadjustedScore">0</div><div id="score-divider">|</div><div class="adjustedScore">0</div></td>
+						</tr>
+						<tr class="tableRow">
+							<td class="ranknum"><p class="rankactualnumber">3</p></td>
+							<td class="col1 row3 row-odd"><img src="GurrenLagannPoster.jpg"></td>
+							<td class="col2 row3 row-odd"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col3 row3 row-odd"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							
+							<td class="col4 row3 row-odd"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col5 row3 row-odd"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col6 row3 row-odd"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col7 row3 row-odd"><div class="unadjustedScore">0</div><div id="score-divider">|</div><div class="adjustedScore">0</div></td>
+						</tr>
+					</tbody>
+					
+					
+				</table>
+
+				
+
+
+
+			</div>
+
+			<div class="rankings-table-div" id="my-rankings-table-div">
+				<table id="ranking-table">
+					<thead>
+						<tr class="tableRow" id="table-header">
+							<th id="ranknumhead"></th>
+							<th id="ranking-type"><div class="headerTitlesDiv" id="image-header"></div></th>
+							<th id="ranking-initial-rating"><div class="headerTitlesDiv" id="rawscore-title">RAW SCORE</div></th>
+							<th id="ranking-writing"><div class="headerTitlesDiv" id="writing-title">WRITING</div></th>
+							
+							<th id="ranking-art-style"><div class="headerTitlesDiv" id="artstyle-design-title">ART STYLE DESIGN</div></th>
+							<th id="ranking-animation"><div class="headerTitlesDiv" id="animation-cinematography-title">ANIMATION CINEMATOGRAPHY</div></th>
+							<th id="ranking-music"><div class="headerTitlesDiv" id="music-title">MUSIC</div></th>
+							<th id="ranking-total"><div class="headerTitlesDiv" id="total-title">TOTAL</div></th>
+						</tr>
+					</thead>
+					<tbody id="rankings-table-body">
+						<tr id="addNewRankingButtonDiv">
+							<td class="ranknum"></td>
+							<td class="col1 row0 row-even"><div class="addNewRankingButton" id="addNewMyRankingButton"><i class="far fa-plus-square"></i></div></td>
+							
+						</tr>
+						<tr class="tableRow">
+							<td class="ranknum"><p class="rankactualnumber">1</p></td>
+							<td class="col1 row1 row-odd"><img src="MadokaMagicaPoster.jpg"></td>
+							<td class="col2 row1 row-odd">
+								<div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col3 row1 row-odd">
+								<div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col4 row1 row-odd"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col5 row1 row-odd"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col6 row1 row-odd"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col7 row1 row-odd"><div class="unadjustedScore">0</div><div id="score-divider">|</div><div class="adjustedScore">0</div></td>
+						</tr>
+						<tr class="tableRow">
+							<td class="ranknum"><p class="rankactualnumber">2</p></td>
+							<td class="col1 row2 row-even"><img src="SexEducationPoster.jpg"></td>
+							<td class="col2 row2 row-even"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col3 row2 row-even">
+								<div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							
+							<td class="col4 row2 row-even"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col5 row2 row-even"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col6 row2 row-even"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col7 row2 row-even"><div class="unadjustedScore">0</div><div id="score-divider">|</div><div class="adjustedScore">0</div></td>
+						</tr>
+						<tr class="tableRow">
+							<td class="ranknum"><p class="rankactualnumber">3</p></td>
+							<td class="col1 row3 row-odd"><img src="SherlockPoster.jpg"></td>
+							<td class="col2 row3 row-odd"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col3 row3 row-odd"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							
+							<td class="col4 row3 row-odd"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col5 row3 row-odd"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col6 row3 row-odd"><div class="elemcontent">
+									<button class="numselector">
+										<input type="text" name="score" value="-" min="0" max="10" class="initial-rating-input">
+									</button>
+									<div class="numselector-content">
+										<p class="numoption">1</p>
+										<p class="numoption">2</p>
+										<p class="numoption">3</p>
+										<p class="numoption">4</p>
+										<p class="numoption">5</p>
+										<p class="numoption">6</p>
+										<p class="numoption">7</p>
+										<p class="numoption">8</p>
+										<p class="numoption">9</p>
+										<p class="numoption">10</p>
+									</div>
+								</div>
+							</td>
+							<td class="col7 row3 row-odd"><div class="unadjustedScore">0</div><div id="score-divider">|</div><div class="adjustedScore">0</div></td>
+						</tr>
+					</tbody>
+					
+					
+				</table>
+
+				
+
+
+
+			</div>
+
+			
+
+		</div>
+	
+
+</body>

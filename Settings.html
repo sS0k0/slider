@@ -1,0 +1,248 @@
+<!DOCTYPE html> 
+
+<html> 
+
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<title>Slider</title>
+
+	<link type="text/css" rel="stylesheet" href="StyleSheet.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	
+	<script src="jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="JavaScriptSheet.js"></script>
+
+</head>
+
+
+<body> 
+	<!--This is for the Header-->
+			<div class="header-wrapper"> 
+				<header>
+					<div class="sliderlogo">
+						<a id="logo" href="index.html"><img src="sliderlogo.png" alt="Slider Logo"></a>
+					</div>
+
+					<p id="slider-title">Slider</p>
+
+			<!-- THIS IS FOR THE TABS MENU -->
+					<nav class="dropdown-menu">
+						<ul class="nav-links">
+							<li id="not-highlighted-page1"><a href="index.html">Browse</a></li>
+							
+							<li id="not-highlighted-page1"><a href="Slidings.html">Slidings</a></li>
+
+							<li id="not-highlighted-page3"><a href="Community.html">Community</a></li>
+						</ul>
+					</nav>
+
+					<nav class="search-profile">
+						
+						<div class="search-box">
+							<input class="search-text" type="text" name="" placeholder="Movies, Shows, People">
+
+							<a class="search-btn" href="#!"><i class="fas fa-search" id="actual-search-icon"></i></a>
+
+						</div>
+
+						<ul class="profile-icon">
+							<li id="profile-icon"><a href="Profile.html"><i class="fas fa-user fa-sm" id="actual-profile-icon"></i></a>
+								<ul id="profile-dropdown-border">
+									<li><a href="#!">Account</a></li>
+									<li><a href="#!">Friends</a></li>
+									<li><a href="settings.html">Settings</a></li>
+									<li><a href="aboutSlider.html">About Slider</a></li>
+								</ul>
+							</li>
+						</ul>
+
+				</header>
+			</div>	
+
+	
+
+	<!--This is for anderson's redone settings-->
+		<div id="settings-divdiv">
+			<!--<p id="settings-title">Settings</p>-->
+			
+			
+			
+			<div class="account-gradient" id="settings-div">
+
+				<div class="settings" id="account-div">
+					<div class="settings-content" id="account-content">
+						<form action="\placeholder.php">
+							
+
+							<div class="settings-subbox" id="credentials">	
+								<p>Credentials</p>							
+								<label for="fname">Username:</label><br>
+								<input type="text" id="fname" name="fname" value=" plagerized"><br><br>
+
+								<div class="seperation-line"></div>
+
+								<label for="fname">Password:</label><br>
+								<input type="text" id="fname" name="fname" value=" **************"><br><br>
+
+								<div class="seperation-line"></div>
+
+								<label for="fname">Name:</label><br>
+								<input type="text" id="fname" name="fname" value=" Andy Poo"><br>
+							</div>
+
+							<div class="settings-subbox" id="contactinfo">
+								<p>Contact Information</p>
+								<label for="fname">Email:</label><br>
+								<input type="text" id="fname" name="fname" value=" ajlukits@gmail.com"><br><br>
+
+								<div class="seperation-line"></div>
+
+								<label for="fname">Phone Number:</label><br>
+								<input type="text" id="fname" name="fname" value=" 604-420-6969"><br><br>
+							</div>
+
+							<input type="submit" value="Save Changes">
+
+							
+						</form> 
+					</div>
+				</div>
+
+				<div class="settings" id="profile-div">
+					<div class="settings-content" id="profile-content">
+						<form action="\placeholder.php">
+
+							<div class="settings-subbox" id="pfp">
+								<p>Personalization</p>
+
+								<div id="profile-picture-div">
+									
+								</div>
+								
+								<div id="setpfp-div">
+									<label for="fname">Profile Picture:</label><br>
+									<input type="submit" value="Click to upload a photo"><br><br>
+								</div>
+
+								<div class="seperation-line"></div>
+
+								<div id="banner-div">
+									
+								</div>
+
+								<div id="setpfb-div">
+									<img src="">
+									<label for="fname">Profile Banner:</label><br>
+									<input type="submit" value="Click to upload a photo"><br><br>
+								</div>
+							</div>
+
+							<div class="settings-subbox" id="profilestatus">
+								<p>Biography</p>
+								<label for="fname">Update Status:</label><br>
+								<input type="text" id="fname" name="fname" value=" Zero Two is bae <3"><br><br>
+							</div>
+
+							<input type="submit" value="Save Changes">
+						</form> 
+					</div>
+				</div>
+
+				<div class="settings" id="privacy-div">
+					<div class="settings-content" id="privacy-content">
+						<div class="settings-subbox">
+							<p>Who can view my profile?</p>
+
+							<div class="profile-privacy">
+								<label for="checkbox-private">Private</label>
+									<input type="checkbox" id="checkbox-private"><br>
+								<label for="checkbox-friends">Friends Only</label>
+									<input type="checkbox" id="checkbox-friends"><br>
+								<label for="checkbox-public">Public</label>
+									<input type="checkbox" id="checkbox-public">
+							</div>
+						</div>
+						<div class="settings-subbox">
+							<p>Who can view my recent shows?</p>
+
+							<div class="recent-shows-privacy">
+								
+								<label for="checkbox-private">Private</label>
+									<input type="checkbox" id="checkbox-private">
+								<label for="checkbox-friends">Friends Only</label>
+									<input type="checkbox" id="checkbox-friends">
+								<label for="checkbox-public">Public</label>
+									<input type="checkbox" id="checkbox-public">
+							</div>
+						</div>
+						<div class="settings-subbox">
+							<p>Who can view my top shows?</p>
+
+							<div class="top-shows-privacy">
+								
+								<label for="checkbox-private">Private</label>
+									<input type="checkbox" id="checkbox-private">
+								<label for="checkbox-friends">Friends Only</label>
+									<input type="checkbox" id="checkbox-friends">
+								<label for="checkbox-public">Public</label>
+									<input type="checkbox" id="checkbox-public">
+							</div>
+						</div>
+						<div class="settings-subbox">
+							<p>Who can view all my shows?</p>
+
+							<div class="all-shows-privacy">
+								
+								<label for="checkbox-private">Private</label>
+									<input type="checkbox" id="checkbox-private">
+								<label for="checkbox-friends">Friends Only</label>
+									<input type="checkbox" id="checkbox-friends">
+								<label for="checkbox-public">Public</label>
+									<input type="checkbox" id="checkbox-public">
+							</div>
+						</div>
+						<div class="settings-subbox">
+							<p>Who can view medals?</p>
+
+							<div class="medals-privacy">
+								
+								<label for="checkbox-private">Private</label>
+									<input type="checkbox" id="checkbox-private">
+								<label for="checkbox-friends">Friends Only</label>
+									<input type="checkbox" id="checkbox-friends">
+								<label for="checkbox-public">Public</label>
+									<input type="checkbox" id="checkbox-public">
+							</div>
+						</div>
+						<div class="settings-subbox">
+							<p>Who can view my stats?</p>
+
+							<div class="stats-privacy">
+								
+								<label for="checkbox-private">Private</label>
+									<input type="checkbox" id="checkbox-private">
+								<label for="checkbox-friends">Friends Only</label>
+									<input type="checkbox" id="checkbox-friends">
+								<label for="checkbox-public">Public</label>
+									<input type="checkbox" id="checkbox-public">
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="tabs-div">
+				<div class="tab selected-tab" id="account-tab">Account</div>
+				<div class="tab" id="profile-tab">Profile</div>
+				<div class="tab" id="privacy-tab">Privacy</div>
+			</div>
+
+		</div>
+</body>
+
+
+</html>
+

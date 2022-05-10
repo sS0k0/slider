@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<title>Slider</title>
+
+	<link type="text/css" rel="stylesheet" href="StyleSheet.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	
+	<script src="jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="JavaScriptSheet.js"></script>
+
+</head>
+
+
+<body>
+	<!--This is for the Header-->
+		<div class="header-wrapper"> 
+		<header>
+			<div class="sliderlogo">
+				<a id="logo" href="index.html"><img src="sliderlogo.png" alt="Slider Logo"></a>
+			</div>
+
+			<p id="slider-title">Slider</p>
+
+	<!-- THIS IS FOR THE TABS MENU -->
+			<nav class="dropdown-menu">
+				<ul class="nav-links">
+					<li id="highlighted-page"><a href="#">Browse</a></li>
+					
+					<li id="not-highlighted-page1"><a href="Slidings.html">Slidings</a></li>
+
+					<li id="not-highlighted-page3"><a href="Community.html">Community</a></li>
+				</ul>
+			</nav>
+
+			<nav class="search-profile">
+				
+				<div class="search-box">
+					<input class="search-text" type="text" name="" placeholder="Movies, Shows, People">
+
+					<a class="search-btn" href="#"><i class="fas fa-search" id="actual-search-icon"></i></a>
+
+				</div>
+
+				<ul class="profile-icon">
+					<li id="profile-icon"><a href="Profile.html"><i class="fas fa-user fa-sm" id="actual-profile-icon"></i></a>
+						<ul id="profile-dropdown-border">
+							<li><a href="#">Account</a></li>
+							<li><a href="#">Friends</a></li>
+							<li><a href="Settings.html">Settings</a></li>
+							<li><a href="About.html">About Slider</a></li>
+						</ul>
+					</li>
+				</ul>
+
+		</header>
+	</div>	
+	
+	<!------------- THIS IS FOR FILTER DROPDOWN MENU ------------------>
+		<div class="fd">
+			<header class="fd-header">
+				<div class="fd-wrapper">
+					<ul>
+						<li>
+							<button class="fd-button">
+								Filter
+							</button>
+
+							<header class="fd-header-content-wrapper">
+								<ul class="fd-header-content">
+									<li id="fd-tAll" class="fd-header-content-li">All Types<span id="tAll"> &times;</span></li>
+									<li id="fd-tMov" class="fd-header-content-li">Movies<span id="tMov"> &times;</span></li>
+									<li id="fd-tTV" class="fd-header-content-li">TV<span id="tTV"> &times;</span></li>
+									<li id="fd-tAni" class="fd-header-content-li">Anime<span id="tAni"> &times;</span></li>
+
+									<li id="fd-gAll" class="fd-header-content-li" class="fd-genres">All Genres<span id="gAll"> &times;</span></li>
+									<li id="fd-gAct" class="fd-header-content-li" class="fd-genres">Action<span id="gAct"> &times;</span></li>
+									<li id="fd-gAdv" class="fd-header-content-li" class="fd-genres">Adventure<span id="gAdv"> &times;</span></li>
+									<li id="fd-gChi" class="fd-header-content-li" class="fd-genres">Children & Family<span id="gChi"> &times;</span></li>
+									<li id="fd-gCla" class="fd-header-content-li" class="fd-genres">Classics<span id="gCla"> &times;</span></li>
+									<li id="fd-gCom" class="fd-header-content-li" class="fd-genres">Comedies<span id="gCom"> &times;</span></li>
+									<li id="fd-gDoc" class="fd-header-content-li" class="fd-genres">Documentaries<span id="gDoc"> &times;</span></li>
+
+									<li id="fd-gDra" class="fd-header-content-li" class="fd-genres">Dramas<span id="gDra"> &times;</span></li>
+									<li id="fd-gFai" class="fd-header-content-li" class="fd-genres">Faith & Spirituality<span id="gFai"> &times;</span></li>
+									<li id="fd-gFan" class="fd-header-content-li" class="fd-genres">Fantasy<span id="gFan"> &times;</span></li>
+									<li id="fd-gHor" class="fd-header-content-li" class="fd-genres">Horror<span id="gHor"> &times;</span></li>
+									<li id="fd-gInd" class="fd-header-content-li" class="fd-genres">Independent<span id="gInd"> &times;</span></li>
+									<li id="fd-gInt" class="fd-header-content-li" class="fd-genres">International<span id="gInt"> &times;</span></li>
+									<li id="fd-gLGB" class="fd-header-content-li" class="fd-genres">LGBTQ<span id="gLGB"> &times;</span></li>
+
+									<li id="fd-gMus" class="fd-header-content-li" class="fd-genres">Music & Musicals<span id="gMus"> &times;</span></li>
+									<li id="fd-gMys" class="fd-header-content-li" class="fd-genres">Mystery & Thriller<span id="gMys"> &times;</span></li>
+									<li id="fd-gRom" class="fd-header-content-li" class="fd-genres">Romance<span id="gRom"> &times;</span></li>
+									<li id="fd-gSci" class="fd-header-content-li" class="fd-genres">Sci-Fi<span id="gSci"> &times;</span></li>
+									<li id="fd-gSpo" class="fd-header-content-li" class="fd-genres">Sports<span id="gSpo"> &times;</span></li>
+
+									<li id="fd-aAll" class="fd-header-content-li" class="fd-agenres">All Anime Genres<span id="aAll"> &times;</span></li>
+									<li id="fd-aEcc" class="fd-header-content-li" class="fd-agenres">Ecchi<span id="aEcc"> &times;</span></li>
+									<li id="fd-aHar" class="fd-header-content-li" class="fd-agenres">Harem<span id="aHar"> &times;</span></li>
+									<li id="fd-aIse" class="fd-header-content-li" class="fd-agenres">Isekai<span id="aIse"> &times;</span></li>
+
+									<li id="fd-aMec" class="fd-header-content-li" class="fd-agenres">Mecha<span id="aMec"> &times;</span></li>
+									<li id="fd-aMov" class="fd-header-content-li" class="fd-agenres">Movie<span id="aMov"> &times;</span></li>
+									<li id="fd-aShounen" class="fd-header-content-li" class="fd-agenres">Shounen<span id="aShounen"> &times;</span></li>
+									<li id="fd-aShoujo" class="fd-header-content-li" class="fd-agenres">Shoujo<span id="aShoujo"> &times;</span></li>
+								</ul>
+							</header>
+
+							<div class="fd-main">
+								<button class="apply-filter">Apply Filters</button>
+								<div class="fd-row">
+									<div class="fd-column" id="fd-column-type">
+										<h3>Type</h3>
+										<a class="fd-column-a" href="#!" id="tAll">All</a>
+										<a class="fd-column-a" href="#!" id="tMov">Movies</a>
+										<a class="fd-column-a" href="#!" id="tTV">TV</a>
+										<a class="fd-column-a" href="#!" id="tAni">Anime</a>
+									</div>
+									<div class="fd-column">
+										<h3>Genre</h3>
+										<a class="fd-column-a" href="#!" id="gAll">All</a>
+										<a class="fd-column-a" href="#!" id="gAct">Action</a>
+										<a class="fd-column-a" href="#!" id="gAdv">Adventure</a>
+										<a class="fd-column-a" href="#!" id="gChi">Children & Family</a>
+										<a class="fd-column-a" href="#!" id="gCla">Classics</a>
+										<a class="fd-column-a" href="#!" id="gCom">Comedy</a>
+										<a class="fd-column-a" href="#!" id="gDoc">Documentary</a>
+									</div>
+									<div class="fd-column">
+										<h3 class="hidden-genre"> &nbsp</h3>
+										<a class="fd-column-a" href="#!" id="gDra">Drama</a>
+										<a class="fd-column-a" href="#!" id="gFai">Faith & Spirituality</a>
+										<a class="fd-column-a" href="#!" id="gFan">Fantasy</a>
+										<a class="fd-column-a" href="#!" id="gHor">Horror</a>
+										<a class="fd-column-a" href="#!" id="gInd">Independent</a>
+										<a class="fd-column-a" href="#!" id="gInt">International</a>
+										<a class="fd-column-a" href="#!" id="gLGB">LGBTQ</a>
+									</div>
+									<div class="fd-column">
+										<h3 class="hidden-genre"> &nbsp</h3>
+										<a class="fd-column-a" href="#!" id="gMus">Music & Musicals</a>
+										<a class="fd-column-a" href="#!" id="gMys">Mystery & Thriller</a>
+										<a class="fd-column-a" href="#!" id="gRom">Romance</a>
+										<a class="fd-column-a" href="#!" id="gSci">Sci-Fi</a>
+										<a class="fd-column-a" href="#!" id="gSpo">Sports</a>
+									</div>
+									<div class="fd-ani-column1">
+										<h3 class="hidden-genre"> &nbsp</h3>
+										<a class="fd-ani-column-a" href="#!" id="aAll">All</a>
+										<a class="fd-ani-column-a" href="#!" id="aEcc">Ecchi</a>
+										<a class="fd-ani-column-a" href="#!" id="aHar">Harem</a>
+										<a class="fd-ani-column-a" href="#!" id="aIse">Isekai</a>
+									</div>
+									<div class="fd-ani-column2">
+										<h3 class="hidden-genre"> &nbsp</h3>
+										<a class="fd-ani-column-a" href="#!" id="aMec">Mecha</a>
+										<a class="fd-ani-column-a" href="#!" id="aMov">Movie</a>
+										<a class="fd-ani-column-a" href="#!" id="aShounen">Shounen</a>
+										<a class="fd-ani-column-a" href="#!" id="aShoujo">Shoujo</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</header>
+		</div> <!--This is end of filter dropdown-->
+			
+	<!--This is for the top by slider-->
+		<div class="body">	
+
+			<div class="top-sliders">
+
+				<div class="item-title-box">
+					<p class="item-title-text">TOP SHOWS BY SLIDER<p>
+				</div>
+				<div class="slide-container">
+					<ul class="slider-list">
+						<li class= "slider-menu" id = "Writing">
+
+							<h1 id="Writing-Heading">WRITING</h1>
+							<input type="range" name="slider" min="0" max="10" value="5" class="my-slider my-unhighlighted-slider" step="1" id="Writing-Slider">
+							
+						</li>
+						<li class= "slider-menu" id = "Plot">
+
+							<h1 id="Plot-Heading">PLOT</h1>
+							<input type="range" name="slider" min="0" max="10" value="5" class="my-slider my-unhighlighted-slider" step="1" id="Plot-Slider">
+							
+						</li>
+						<li class= "slider-menu" id = "Art-Style">
+		
+							<h1 id="Art-Style-Heading">ART STYLE</h1>
+							<input type="range" name="slider" min="0" max="10" value="5" class="my-slider my-unhighlighted-slider" step="1" id="Art-Style-Slider">
+												
+						</li>
+						<li class= "slider-menu" id = "Animation">
+
+							<h1 id="Animation-Heading">ANIMATION</h1>
+							<input type="range" name="slider" min="0" max="10" value="5" class="my-slider my-unhighlighted-slider" step="1" id="Animation-Slider">	
+										
+						</li>
+						<li class= "slider-menu" id = "Music">
+
+							<h1 id="Music-Heading">MUSIC</h1>
+							<input type="range" name="slider" min="0" max="10" value="5" class="my-slider my-unhighlighted-slider" step="1" id="Music-Slider">	
+
+						</li>
+					</ul>
+				</div> 
+
+				<div class="top-image" id="top-image">
+						<p id="top-image-text">TOP WRITING RATING </br>
+						9.4/10</p>	
+						<a href="https://www.crunchyroll.com/one-piece" id="top-image-link"><img src="OnePieceBanner.jpg"></a>
+				</div>
+
+			</div>
+
+		</div>
+
+	<!-- Very cool row -->
+		<div class="item-title-box rows-titles">
+			<p class="item-title-text" id="rows-titles-text">TRENDING</p>
+		</div>
+		<div class="row-box">
+			<div class="row">
+				<div class="row-wrapper">
+						<div class="row-item">
+							<a id="first-item" href="MovieInfo.html">
+								<figure class="thumbnail-wrap">
+									<img src="game of thrones poster (1102x1500).jpg" alt="filler">
+									<img src="juju.jpg" alt="poster" id="hover-poster">
+								</figure>
+							</a>
+							<div class="sidebar">
+							</div>
+						</div>
+						<div class="row-item">
+							<a id="first-item" href="MovieInfo.html">
+								<figure class="thumbnail-wrap">
+									<img src="game of thrones poster (1102x1500).jpg" alt="filler">
+									<img src="juju.jpg" alt="poster" id="hover-poster">
+								</figure>
+							</a>
+							<div class="sidebar">
+							</div>
+						</div>
+						<div class="row-item">
+							<a id="first-item" href="MovieInfo.html">
+								<figure class="thumbnail-wrap">
+									<img src="juju poster.jpg" alt="filler">
+									<img src="juju.jpg" alt="poster" id="hover-poster">
+								</figure>
+							</a>
+							<div class="sidebar">
+							</div>
+						</div>
+						<div class="row-item">
+							<a id="first-item" href="MovieInfo.html">
+								<figure class="thumbnail-wrap">
+									<img src="juju poster.jpg" alt="filler">
+									<img src="juju.jpg" alt="poster" id="hover-poster">
+								</figure>
+							</a>
+							<div class="sidebar">
+							</div>
+						</div>
+						<div class="row-item">
+							<a id="first-item" href="MovieInfo.html">
+								<figure class="thumbnail-wrap">
+									<img src="game of thrones poster (1102x1500).jpg" alt="filler">
+									<img src="juju.jpg" alt="poster" id="hover-poster">
+								</figure>
+							</a>
+							<div class="sidebar">
+							</div>
+						</div>
+						<div class="row-item">
+							<a id="first-item" href="MovieInfo.html">
+								<figure class="thumbnail-wrap">
+									<img src="game of thrones poster (1102x1500).jpg" alt="filler">
+									<img src="juju.jpg" alt="poster" id="hover-poster">
+								</figure>
+							</a>
+							<div class="sidebar">
+							</div>
+						</div>	
+						<div class="row-item">
+							<a id="first-item" href="MovieInfo.html">
+								<figure class="thumbnail-wrap">
+									<img src="juju poster.jpg" alt="filler">
+									<img src="juju.jpg" alt="poster" id="hover-poster">
+								</figure>
+							</a>
+							<div class="sidebar">
+							</div>
+						</div>
+						<div class="row-item">
+							<a id="first-item" href="MovieInfo.html">
+								<figure class="thumbnail-wrap">
+									<img src="juju poster.jpg" alt="filler">
+									<img src="juju.jpg" alt="poster" id="hover-poster">
+								</figure>
+							</a>
+							<div class="sidebar">
+							</div>
+						</div>
+						<div class="row-item">
+							<a id="first-item" href="MovieInfo.html">
+								<figure class="thumbnail-wrap">
+									<img src="juju poster.jpg" alt="filler">
+									<img src="juju.jpg" alt="poster" id="hover-poster">
+								</figure>
+							</a>
+							<div class="sidebar">
+							</div>
+						</div>
+						<div class="row-item">
+							<a id="first-item" href="MovieInfo.html">
+								<figure class="thumbnail-wrap">
+									<img src="juju poster.jpg" alt="filler">
+									<img src="juju.jpg" alt="poster" id="hover-poster">
+								</figure>
+							</a>
+							<div class="sidebar">
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="carousel_actions">
+							
+				<button class="carousel_box" id="left_box">
+					<div class="carousel_arrow" id="carousel_button--prev"> </div>
+				</button>
+
+				<button class="carousel_box" id="right_box">
+					<div class="carousel_arrow" id="carousel_button--next"> </div>
+				</button>
+			</div>
+		</div>
+	<!--This is the podium-->
+		<div class="podium-div">
+
+			
+
+		</div>
+
+	<!-- This is for the trailer vertical scroll -->
+		<div class="trailerWrapper">
+
+		<div id="trailerTitle"><p>NEW TRAILERS</p></div>
+
+		<div id="trailerContainer">
+
+			<div class="trailerDescriptionGrid">
+
+				<div  class="trailerGridItem">
+
+					<div class="trailerDescription">
+						<h3> DUNE OFFICIAL TRAILER 69 </h3>
+						<p> 1 This show stars Timothee Chalamet, the new thirst trap thats been turning girls left and right into female sanjis </p>
+					</div>
+
+				</div>
+
+				<div  class="trailerGridItem">
+
+					<div class="trailerDescription">
+						<h3> DUNE OFFICIAL TRAILER 69 </h3>
+						<p> 2 This show stars Timothee Chalamet, the new thirst trap thats been turning girls left and right into female sanjis </p>
+					</div>
+
+				</div>
+
+				<div  class="trailerGridItem">
+
+					<div class="trailerDescription">
+						<h3> DUNE OFFICIAL TRAILER 69 </h3>
+						<p> 3 This show stars Timothee Chalamet, the new thirst trap thats been turning girls left and right into female sanjis </p>
+					</div>
+
+				</div>
+
+				<div  class="trailerGridItem">
+
+					<div class="trailerDescription">
+						<h3> DUNE OFFICIAL TRAILER 69 </h3>
+						<p> 4 This show stars Timothee Chalamet, the new thirst trap thats been turning girls left and right into female sanjis </p>
+					</div>
+
+				</div>
+
+			</div>
+
+			<button class="upButton">
+					<span class="material-icons">keyboard_arrow_up</span>
+			</button>
+
+			<button class="downButton">
+					<span class="material-icons">keyboard_arrow_down</span>
+			</button>
+
+			<ul class="trailerVids">
+				<li class="trailerVid">
+					<iframe class="trailerYoutube" width="854" height="480" src="https://www.youtube.com/embed/n9xhJrPXop4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</li>
+
+				<li class="trailerVid">
+					<iframe class="trailerYoutube" width="854" height="480" src="https://www.youtube.com/embed/n9xhJrPXop4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</li>
+
+				<li class="trailerVid">
+					<iframe class="trailerYoutube" width="854" height="480" src="https://www.youtube.com/embed/n9xhJrPXop4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</li>
+
+				<li class="trailerVid">
+					<iframe class="trailerYoutube" width="854" height="480" src="https://www.youtube.com/embed/n9xhJrPXop4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</li>
+			</ul>
+
+		</div>
+
+		</div>
+	
+	<!-- -->
+<!-- Head to Head -->
+		<div class="bigger-image-controls-box">
+			<div class="item-title-box" id="head-title-box">
+				<p class="item-title-text">HEAD TO HEAD</p>
+			</div>
+			<div class="image-included-sliding">
+				<div class="head2head-wrapper">
+						<div class="background-control-scroll">
+						</div>
+						<div class= "all-sections-head">
+							<section id="movie-head">
+								<div class="slot-1">
+									<a href="index.html"> <img src="joker-poster.jpg" alt="Joker"> </a>
+								</div>
+								<div class="container-head">
+
+											<section id="movie-matchup"> 	
+												<div class="sidebar-head left-slot">
+													<p class="misc-score" id="first-misc-score"> Aug. 31st 2019 </p>
+													<p class="misc-score"> DC Movies </p>
+													<p class="misc-score"> $55 Million </p>
+													<p class="misc-score"> $1.07 Billion </p>
+													<p class="misc-score"> 2hrs 2min </p>
+													<p class="side-slider-score" id="first-side-slider-score"> 8.3 </p>
+													<p class="side-slider-score"> 2.3 </p>
+													<p class="side-slider-score"> 6.0 </p>
+													<p class="side-slider-score"> 7.6 </p>
+													<p class="side-slider-score"> 9.7 </p>
+													<p class="side-slider-score" id="total-graphic"> 25.6 <span style="color: black">|</span>
+																									<span class="slider-total">34.1</span> 
+													</p>
+												</div>
+												
+												<div class="sidebar-head" id="right-slot">
+													<p class="misc-right-score" id="first-right-misc-score"> Sep. 27th 2019 </p>
+													<p class="misc-right-score"> Netlfix </p>
+													<p class="misc-right-score"> $155 Million </p>
+													<p class="misc-right-score"> $8 Million </p>
+													<p class="misc-right-score"> 3hrs 30min </p>
+													<p class="side-slider-score" id="first-side-slider-score"> 9.1 </p>
+													<p class="side-slider-score"> 4.2 </p>
+													<p class="side-slider-score"> 8.1 </p>
+													<p class="side-slider-score"> 6.4 </p>
+													<p class="side-slider-score"> 3.6 </p>
+													<p class="side-slider-score" id="total-graphic"> 31.4 <span style="color: black">|</span>
+																									<span class="slider-total">41.8</span> 
+													</p>
+												</div>
+
+											</section>
+								</div>
+								<div class="slot-2">
+									<a href="index.html"> <img src="the-irishman-poster.jpg" alt="Joker"></a>
+								</div>
+							</section>
+							<section id="tv-head">
+								<div class="slot-1">
+									<a href="index.html"> <img src="The-Witcher.jpg" alt="Joker"> </a>
+								</div>
+								<div class="container-head">
+											<section id="movie-matchup"> 	
+												<div class="sidebar-head left-slot">
+													<p class="misc-score" id="first-misc-score"> Aug. 31st 2019 </p>
+													<p class="misc-score"> DC Movies </p>
+													<p class="misc-score"> $55 Million </p>
+													<p class="misc-score"> $1.07 Billion </p>
+													<p class="misc-score"> 2hrs 2min </p>
+													<p class="side-slider-score" id="first-side-slider-score"> 8.3 </p>
+													<p class="side-slider-score"> 2.3 </p>
+													<p class="side-slider-score"> 6.0 </p>
+													<p class="side-slider-score"> 7.6 </p>
+													<p class="side-slider-score"> 9.7 </p>
+													<p class="side-slider-score" id="total-graphic"> 25.6 <span style="color: black">|</span>
+																									<span class="slider-total">34.1</span> 
+													</p>
+												</div>
+												
+												<div class="sidebar-head" id="right-slot">
+													<p class="misc-right-score" id="first-right-misc-score"> Sep. 27th 2019 </p>
+													<p class="misc-right-score"> Netlfix </p>
+													<p class="misc-right-score"> $155 Million </p>
+													<p class="misc-right-score"> $8 Million </p>
+													<p class="misc-right-score"> 3hrs 30min </p>
+													<p class="side-slider-score" id="first-side-slider-score"> 9.1 </p>
+													<p class="side-slider-score"> 4.2 </p>
+													<p class="side-slider-score"> 8.1 </p>
+													<p class="side-slider-score"> 6.4 </p>
+													<p class="side-slider-score"> 3.6 </p>
+													<p class="side-slider-score" id="total-graphic"> 31.4 <span style="color: black">|</span>
+																									<span class="slider-total">41.8</span> 
+													</p>
+												</div>
+
+											</section>
+								</div>
+								<div class="slot-2">
+									<a href="index.html"> <img src="the mandalorian poster (667x1000).jpg" alt="Joker"></a>
+								</div>
+							</section>
+							<section id="anime-head">
+								<div class="slot-1">
+									<a href="index.html"> <img src="AOT-s4-poster.jpg" alt="Joker"> </a>
+								</div>
+								<div class="container-head">
+
+											<section id="movie-matchup"> 	
+												<div class="sidebar-head left-slot">
+													<p class="misc-score" id="first-misc-score"> Aug. 31st 2019 </p>
+													<p class="misc-score"> DC Movies </p>
+													<p class="misc-score"> $55 Million </p>
+													<p class="misc-score"> $1.07 Billion </p>
+													<p class="misc-score"> 2hrs 2min </p>
+													<p class="side-slider-score" id="first-side-slider-score"> 8.3 </p>
+													<p class="side-slider-score"> 2.3 </p>
+													<p class="side-slider-score"> 6.0 </p>
+													<p class="side-slider-score"> 7.6 </p>
+													<p class="side-slider-score"> 9.7 </p>
+													<p class="side-slider-score" id="total-graphic"> 25.6 <span style="color: black">|</span>
+																									<span class="slider-total">34.1</span> 
+													</p>
+												</div>
+												
+												<div class="sidebar-head" id="right-slot">
+													<p class="misc-right-score" id="first-right-misc-score"> Sep. 27th 2019 </p>
+													<p class="misc-right-score"> Netlfix </p>
+													<p class="misc-right-score"> $155 Million </p>
+													<p class="misc-right-score"> $8 Million </p>
+													<p class="misc-right-score"> 3hrs 30min </p>
+													<p class="side-slider-score" id="first-side-slider-score"> 9.1 </p>
+													<p class="side-slider-score"> 4.2 </p>
+													<p class="side-slider-score"> 8.1 </p>
+													<p class="side-slider-score"> 6.4 </p>
+													<p class="side-slider-score"> 3.6 </p>
+													<p class="side-slider-score" id="total-graphic"> 31.4 <span style="color: black">|</span>
+																									<span class="slider-total">41.8</span> 
+													</p>
+												</div>
+
+											</section>
+								</div>
+								<div class="slot-2">
+									<a href="index.html"> <img src="drstone-s2-poster.jpg" alt="Joker"></a>
+								</div>
+							</section>
+						</div>
+				</div>
+			</div>
+
+			<div class="box-between-sidebars">
+					<ul>
+						<li id="matchup-header"> MOVIE MATCHUP </li>
+						<li class="sub-slider date-change" id="Miscellanious-comp"> Release Date </li>
+						<li class="sub-slider" id="Miscellanious-comp"> Studio </li>
+						<li class="sub-slider" id="Miscellanious-comp"> Budget </li>
+						<li class="sub-slider viewership-change" id="Miscellanious-comp"> Box Office </li>
+						<li class="sub-slider length-change" id="Miscellanious-comp"> Runtime </li>
+						<li class="sub-slider" id="first-boi"> Base </li>
+						<li class="sub-slider"> Writing </li>
+						<li class="sub-slider" id="style-change"> Style </li>
+						<li class="sub-slider" id="animation-change"> Cinematography </li>
+						<li class="sub-slider"> Music</li>
+						<li class="sub-slider" id="total-middle"> TOTAL </li>
+					</ul>
+			</div>
+
+			<div class="head2head-controls">
+							<span class="arrow-left-head"> 
+								<span class="material-icons">
+									keyboard_arrow_left
+								</span> 
+							</span>
+							<span class="arrow-right-head"> 
+								<span class="material-icons">
+									keyboard_arrow_right
+								</span> 
+							</span>
+							<ul>
+								<li class="scroll-button" id="selected"></li>
+								<li class="scroll-button"></li>
+								<li class="scroll-button"></li>
+							</ul>
+			</div>
+		</div>
+	
+	<!--This is the podium-->
+
+		<div class="item-title-box">
+			<p class="item-title-text">PODIUM 2021</p>
+		</div>
+
+		<div id="podiumGraphWrapper">
+
+			<div id="podium-info">
+				<p>       Every year slider.com holds a vote for the best movies, shows and anime from that year. The top three shows will go down in slider.com history as the best from their year and will be commemorated with a medal on their home page. If you have an anime, show or film that touched you this year make sure you cast your vote. Be selective though, you only get one per category!
+				</p>
+			</div>
+
+			<div id="podiumInfoIcon"><img src="QuestionMarkIcon.png"></div>
+			<div id="podium-graph">
+
+				<div class="podium-section-container" id="movies-container">
+					<div class="podium_element" id="podium-element-one">
+						<img class="podium-poster" id="secondPlace"src="PrincessMononokePoster.jpg">
+						<div class="podium-bar" id="podium-bar-one">
+							<p id="podium-votes"></p>
+						</div>
+						<img class="podium-medal" id="secondPlaceMedal" src="silverMedal.png">
+					</div>
+					<div class="podium_element" id="podium-element-two">
+						<img class="podium-poster" id="firstPlace" src="InceptionPoster.jpg">
+						<div class="podium-bar" id="podium-bar-two">
+							<p id="podium-votes"></p>
+						</div>
+						<img class="podium-medal" id="firstPlaceMedal" src="GoldMedal.png">
+					</div>
+					<div class="podium_element" id="podium-element-three">
+						<img class="podium-poster" id="thirdPlace" src="TheDeathOfStalinPoster.jpg">
+						<div class="podium-bar" id="podium-bar-three">
+							<p id="podium-votes"></p>
+						</div>
+						<img class="podium-medal" id="thirdPlaceMedal" src="BronzeMedal.png">
+					</div>
+					<p id="podium-section">MOVIES</p>
+				</div>
+
+
+				<div class="podium-section-container" id="shows-container">
+					<div class="podium_element" id="podium-element-four">
+						<img class="podium-poster" id="secondPlace" src="StrangerThingsPoster.jpg">
+						<div class="podium-bar" id="podium-bar-four"></div>
+						<img class="podium-medal" id="secondPlaceMedal" src="silverMedal.png">
+					</div>
+					<div class="podium_element" id="podium-element-five">
+						<img class="podium-poster" id="firstPlace" src="TheWitcherPoster.jpg">
+						<div class="podium-bar" id="podium-bar-five">
+							<p id="podium-votes"></p>
+						</div>
+						<img class="podium-medal" id="firstPlaceMedal" src="GoldMedal.png">
+					</div>
+					<div class="podium_element" id="podium-element-six">
+						<img class="podium-poster" id="thirdPlace" src="NarcosPoster.jpg">
+						<div class="podium-bar" id="podium-bar-six">
+							<p id="podium-votes"></p>
+						</div>
+						<img class="podium-medal" id="thirdPlaceMedal" src="BronzeMedal.png">
+					</div>
+					<p id="podium-section">TV SHOWS</p>
+				</div>
+
+
+				<div class="podium-section-container" id="anime-container">
+					<div class="podium_element" id="podium-element-seven">
+						<img class="podium-poster" id="secondPlace" src="DarlingInTheFranxxPoster.jpg">
+						<div class="podium-bar" id="podium-bar-seven">
+							<p id="podium-votes"></p>
+						</div>
+						<img class="podium-medal" id="secondPlaceMedal" src="silverMedal.png">
+					</div>
+					<div class="podium_element" id="podium-element-eight">
+						<img class="podium-poster" id="firstPlace" src="DevilmanCrybabyPoster.jpg">
+						<div class="podium-bar" id="podium-bar-eight">
+							<p id="podium-votes"></p>
+						</div>
+						<img class="podium-medal" id="firstPlaceMedal" src="GoldMedal.png">
+					</div>
+					<div class="podium_element" id="podium-element-nine">
+						<img class="podium-poster" id="thirdPlace" src="NeonGenesisEvangelionPoster.jpg">
+						<div class="podium-bar" id="podium-bar-nine">
+							<p id="podium-votes"></p>
+						</div>
+						<img class="podium-medal" id="thirdPlaceMedal" src="BronzeMedal.png">
+					</div>
+					<p id="podium-section">ANIME</p>
+				</div>
+
+
+			</div>
+		</div>
+	
+</body>
+
+</html>

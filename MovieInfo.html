@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<title>Slider</title>
+
+	<link type="text/css" rel="stylesheet" href="StyleSheet.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	
+	<script src="jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="JavaScriptSheet.js"></script>
+
+</head>
+
+
+<body>
+	<!--This is for the Header-->
+		<div class="header-wrapper"> 
+		<header>
+			<div class="sliderlogo">
+				<a id="logo" href="index.html"><img src="sliderlogo.png" alt="Slider Logo"></a>
+			</div>
+
+			<p id="slider-title">Slider</p>
+
+	<!-- THIS IS FOR THE TABS MENU -->
+			<nav class="dropdown-menu">
+				<ul class="nav-links">
+					<li id="not-highlighted-page1"><a href="#">Browse</a></li>
+					
+					<li id="not-highlighted-page2"><a href="Slidings.html">Slidings</a></li>
+
+					<li id="not-highlighted-page3"><a href="Community.html">Community</a></li>
+				</ul>
+			</nav>
+
+			<nav class="search-profile">
+				
+				<div class="search-box">
+					<input class="search-text" type="text" name="" placeholder="Movies, Shows, People">
+
+					<a class="search-btn" href="#"><i class="fas fa-search" id="actual-search-icon"></i></a>
+
+				</div>
+
+				<ul class="profile-icon">
+					<li id="profile-icon"><a href="Profile.html"><i class="fas fa-user fa-sm" id="actual-profile-icon"></i></a>
+						<ul id="profile-dropdown-border">
+							<li><a href="#">Account</a></li>
+							<li><a href="#">Friends</a></li>
+							<li><a href="#">Settings</a></li>
+							<li><a href="#">About Slider</a></li>
+						</ul>
+					</li>
+				</ul>
+
+		</header>
+	</div>
+
+	<div class="movieInfoTitleContainer">
+		<p class="movieInfoTitle">ONE PIECE</p>
+		<p class="movieInfoRelease">(1999) (movie format not tv, tv will be another html)</p>
+	</div>
+
+	<div class="movieInfoBackground">
+		<div class="movieInfoWrapper">
+
+			<div class="movieInfoPoster">
+				<a href="">
+					<img src="wano.jpg" alt="One Piece">
+				</a>
+			</div>
+
+			<div class="movieInfoSidebar">
+				<p id="movieInfoRecentRating">42.4
+					<span id="movieInfoBetweenBar" style="color: black">-</span>
+					<span style="color: #877F7D">36.1</span></p>
+				<div id="movieInfoMedalRecent"> 
+					<img src="GoldMedal.png"> 
+				</div>
+			</div>
+
+			<div class="movieInfoSlideContainer">
+				<ul>
+					<li class= "movieInfoSlideMenu" id = "profileWriting">
+
+						<h1 id="Writing-Heading">WRITING</h1>
+						<input type="range" name="slider" min="0" max="10" value="5" class="my-slider my-unhighlighted-slider" step="1" id="Writing-Slider">
+						
+					</li>
+					<li class="movieInfoSlideMenu" id="profilePlot">
+
+						<h1 id="Plot-Heading">PLOT</h1>
+						<input type="range" name="slider" min="0" max="10" value="5" class="my-slider my-unhighlighted-slider" step="1" id="Plot-Slider">
+						
+					</li>
+					<li class="movieInfoSlideMenu" id="profileArtStyle">
+	
+						<h1 id="Art-Style-Heading">ART STYLE</h1>
+						<input type="range" name="slider" min="0" max="10" value="5" class="my-slider my-unhighlighted-slider" step="1" id="Art-Style-Slider">
+											
+					</li>
+					<li class="movieInfoSlideMenu" id="profileAnimation">
+
+						<h1 id="Animation-Heading">ANIMATION</h1>
+						<input type="range" name="slider" min="0" max="10" value="5" class="my-slider my-unhighlighted-slider" step="1" id="Animation-Slider">	
+									
+					</li>
+					<li class="movieInfoSlideMenu" id="profileMusic">
+
+						<h1 id="Music-Heading">MUSIC</h1>
+						<input type="range" name="slider" min="0" max="10" value="5" class="my-slider my-unhighlighted-slider" step="1" id="Music-Slider">	
+
+					</li>
+				</ul>
+			</div> 
+
+			<div class="movieInfoDescription">
+				<p> One Piece is about how Luffy will become the King of Pirates. ルフィは食べ物を食べるのが好きです。 彼はゴムの男です。 彼の特別な力は、彼がガムガムジェットピストルを使用できることです。 </p>
+			</div>
+
+
+		</div> <!-- This is the end of the wrapper that includes the movie poster -->
+
+	<!-- MOVIE INFO TRAILERS CAROUSEL -->
+		<div class="movieInfoTrailers">
+			<div class="movieInfoTrailerButtonContainer">
+				<button class="movieInfoTrailerButton" id="movieInfoTrailerLeftButton">
+					<span class="material-icons">keyboard_arrow_left</span>
+				</button>
+
+				<button class="movieInfoTrailerButton" id="movieInfoTrailerRightButton">
+					<span class="material-icons">keyboard_arrow_right</span>
+				</button>
+			</div>
+
+			<div class="movieInfoTrailerCarousel">
+					<div class="movieInfoTrailer">
+						<div class="movieInfoTrailerOverlay">
+							<div class="movieInfoTrailerOverlayText">
+								<p>This trailer is about a show that is very good, it is about a rubber man who will become the king of the kaizoku</p>
+							</div>
+						</div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/TbHtbzAnZJ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="movieInfoTrailer">
+						<div class="movieInfoTrailerOverlay">
+							<div class="movieInfoTrailerOverlayText">
+								<p>This trailer is about a show that is very good, it is about a rubber man who will become the king of the kaizoku</p>
+							</div>
+						</div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/bWfkpxbLNDI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="movieInfoTrailer">
+						<div class="movieInfoTrailerOverlay">
+							<div class="movieInfoTrailerOverlayText">
+								<p>This trailer is about a show that is very good, it is about a rubber man who will become the king of the kaizoku</p>
+							</div>
+						</div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/wNPzOEf1H24" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="movieInfoTrailer">
+						<div class="movieInfoTrailerOverlay">
+							<div class="movieInfoTrailerOverlayText">
+								<p>This trailer is about a show that is very good, it is about a rubber man who will become the king of the kaizoku</p>
+							</div>
+						</div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/y4YdPETYueQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="movieInfoTrailer">
+						<div class="movieInfoTrailerOverlay">
+							<div class="movieInfoTrailerOverlayText">
+								<p>This trailer is about a show that is very good, it is about a rubber man who will become the king of the kaizoku</p>
+							</div>
+						</div>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/3UxfnhT4pTI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="movieInfoSeeMore">
+						<p> See More </p>
+						<a href="#!">
+							<div class="movieInfoSeeMoreCircle">
+								<span class="material-icons">keyboard_arrow_right</span>
+							</div>
+						</a>
+					</div>
+			</div>
+		</div> <!-- This is the end of the trailer container -->
+
+
+	<!-- CAST CAROUSEL -->
+
+		<div class="movieInfoCast">
+			<div class="movieInfoSectionTitle">
+				<p>Cast</p>
+			</div>
+
+			<div class="movieInfoCastButtonContainer">
+				<button class="movieInfoCastButton" id="movieInfoCastLeftButton">
+					<span class="material-icons">keyboard_arrow_left</span>
+				</button>
+
+				<button class="movieInfoCastButton" id="movieInfoCastRightButton">
+					<span class="material-icons">keyboard_arrow_right</span>
+				</button>
+			</div>
+
+			<div class="movieInfoCastCarousel">
+				<div class="movieInfoCastBlock">
+					<div class="movieInfoCastPic">
+						<a href="#!"><img src=Johnny.jpg></a>
+					</div>
+					<div class="movieInfoCastName">
+						<a href="#!"><p class="movieInfoActor">Mayumi Tanaka</p></a>
+						<p class="movieInfoCharacter">Monkey D. Luffy</p>
+					</div>
+				</div>
+
+				<div class="movieInfoCastBlock">
+					<div class="movieInfoCastPic">
+						<a href="#!"><img src=Johnny.jpg></a>
+					</div>
+					<div class="movieInfoCastName">
+						<a href="#!"><p class="movieInfoActor">Johnny Test</p></a>
+						<p class="movieInfoCharacter">Johnny Test</p>
+					</div>
+				</div>
+
+				<div class="movieInfoCastBlock">
+					<div class="movieInfoCastPic">
+						<a href="#!"><img src=Johnny.jpg></a>
+					</div>
+					<div class="movieInfoCastName">
+						<a href="#!"><p class="movieInfoActor">Johnny Test</p></a>
+						<p class="movieInfoCharacter">Johnny Test</p>
+					</div>
+				</div>
+
+				<div class="movieInfoCastBlock">
+					<div class="movieInfoCastPic">
+						<a href="#!"><img src=Johnny.jpg></a>
+					</div>
+					<div class="movieInfoCastName">
+						<a href="#!"><p class="movieInfoActor">Johnny Test</p></a>
+						<p class="movieInfoCharacter">Johnny Test</p>
+					</div>
+				</div>
+
+				<div class="movieInfoCastBlock">
+					<div class="movieInfoCastPic">
+						<a href="#!"><img src=Johnny.jpg></a>
+					</div>
+					<div class="movieInfoCastName">
+						<a href="#!"><p class="movieInfoActor">Johnny Test</p></a>
+						<p class="movieInfoCharacter">Johnny Test</p>
+					</div>
+				</div>
+
+				<div class="movieInfoCastBlock">
+					<div class="movieInfoCastPic">
+						<a href="#!"><img src=Johnny.jpg></a>
+					</div>
+					<div class="movieInfoCastName">
+						<a href="#!"><p class="movieInfoActor">Johnny Test</p></a>
+						<p class="movieInfoCharacter">Johnny Test</p>
+					</div>
+				</div>
+
+				<div class="movieInfoCastBlock">
+					<div class="movieInfoCastPic">
+						<a href="#!"><img src=Johnny.jpg></a>
+					</div>
+					<div class="movieInfoCastName">
+						<a href="#!"><p class="movieInfoActor">Johnny Test</p></a>
+						<p class="movieInfoCharacter">Johnny Test</p>
+					</div>
+				</div>
+
+				<div class="movieInfoCastBlock">
+					<div class="movieInfoCastPic">
+						<a href="#!"><img src=Johnny.jpg></a>
+					</div>
+					<div class="movieInfoCastName">
+						<a href="#!"><p class="movieInfoActor">Johnny Test</p></a>
+						<p class="movieInfoCharacter">Johnny Test</p>
+					</div>
+				</div>
+			</div>
+		</div> <!-- This is the end of the Cast container -->
+
+
+	<!-- MOVIE INFO DETAILS -->
+
+
+		<div class="movieInfoDetailsWrapper">
+			<div class="movieInfoDetailsDetails">
+				<div class="movieInfoSectionTitle">
+					<p>&nbsp&nbsp&nbsp Details</p>
+				</div>
+
+				<div class="movieInfoDetailsText">
+					<p><strong>Country: </strong>Japan</p>
+					<p><strong>Language: </strong>Japanese</p>
+					<p><strong>Release Date: </strong>October 20, 1999</p>
+					<br>
+					<p><strong>Production Company: </strong>Toei Animation</p>
+					<p><strong>Episode Runtime: </strong>24 min</p>
+					<p><strong>Featured Soundtracks: </strong>Bon Voyage, We Are!</p>
+				</div>
+				
+			</div>		
+
+			<div class="movieInfoDetailsMore">
+				<div class="movieInfoSectionTitle">
+					<p>&nbsp&nbsp&nbsp See More Like This</p>
+				</div>
+
+				<div class="movieInfoMore">
+
+					<div class="movieInfoMoreBlock">
+						<div class="movieInfoMorePic">
+							<a href="#!"><img src=bleach.jpg></a>
+						</div>
+
+						<div class="movieInfoMoreName">
+							<a href="#!"><p class="movieInfoMoreRec">Bleach</p></a>
+						</div>
+					</div>
+
+					<div class="movieInfoMoreBlock">
+						<div class="movieInfoMorePic">
+							<a href="#!"><img src=fullmetal.jpg></a>
+						</div>
+
+						<div class="movieInfoMoreName">
+							<a href="#!"><p class="movieInfoMoreRec">Fullmetal Alchemist</p></a>
+						</div>
+					</div>
+
+					<div class="movieInfoMoreBlock">
+						<div class="movieInfoMorePic">
+							<a href="#!"><img src=juju.jpg></a>
+						</div>
+
+						<div class="movieInfoMoreName">
+							<a href="#!"><p class="movieInfoMoreRec">Jujutsu Kaisen</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- This is the end of the Details container -->
+
+	</div > <!-- This is the end of the main container -->
+
+</body>
+
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+	<title>Slider</title>
+
+	<link type="text/css" rel="stylesheet" href="StyleSheet.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	
+	<script src="jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="JavaScriptSheet.js"></script>
+  
+</head>
+
+<body>
+
+	<!--This is for the Header-->
+		<div class="header-wrapper"> 
+			<header>
+				<div class="sliderlogo">
+					<a id="logo" href="index.html"><img src="sliderlogo.png" alt="Slider Logo"></a>
+				</div>
+
+				<p id="slider-title">Slider</p>
+
+		<!-- THIS IS FOR THE TABS MENU -->
+				<nav class="dropdown-menu">
+					<ul class="nav-links">
+						<li id="not-highlighted-page2"><a href="index.html">Browse</a></li>
+						
+						<li id="not-highlighted-page1"><a href="Slidings.html">Slidings</a></li>
+
+						<li id="highlighted-page"><a href="Community.html">Community</a></li>
+					</ul>
+				</nav>
+
+				<nav class="search-profile">
+					
+					<div class="search-box">
+						<input class="search-text" type="text" name="" placeholder="Movies, Shows, People">
+
+						<a class="search-btn" href="#"><i class="fas fa-search" id="actual-search-icon"></i></a>
+
+					</div>
+
+					<ul class="profile-icon">
+						<li id="profile-icon"><a href="Profile.html"><i class="fas fa-user fa-sm" id="actual-profile-icon"></i></a>
+							<ul id="profile-dropdown-border">
+								<li><a href="#">Account</a></li>
+								<li><a href="#">Friends</a></li>
+								<li><a href="Settings.html">Settings</a></li>
+								<li><a href="About.html">About Slider</a></li>
+							</ul>
+						</li>
+					</ul>
+
+			</header>
+		</div>
+
+	<!--This is for the create a group part-->
+		<div id="create-group-masterdivdiv">
+			<div id="create-group-exit"><i class="fas fa-times"></i></div>
+			<div id="confirm-create-group">
+					<p>Create Group</p>
+				</div>
+			<div id="create-group-masterdiv">
+
+				<div id="group-members-border">
+					<div id="group-members-div">
+						<div id="start-div"></div>
+						<div class="group-member" id="placeholder-member">
+							<div id="placeholder-member-pfp">
+								<i class="fas fa-user" id="no-profile-pic"></i>
+							</div>
+							<div class="member-info">
+								<p> add members . . .</p>
+							</div>
+						</div>
+						<div id="add-members-button">
+							<i class="fas fa-plus"></i>
+						</div>
+					</div>
+				</div>
+
+				<div id="create-group-innermasterdiv">
+
+					<div id="group-banner-div">
+						
+					</div>
+
+					<div id="group-pfp-div">
+						<i class="fas fa-user" id="no-profile-pic"></i>
+					</div>
+
+					<div id="group-info">
+						<div id="group-name-div">
+							<input type="text" name="namebox" id="name-entry" value=" group name . . .">
+						</div>
+
+						<div id="group-desc-div">
+							<textarea type='text' spellcheck="false" id="desc-entry" value=""></textarea>
+						</div>
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+  
+  	<div class="profile-background" id="community-page">
+  	<div id="feed-column">
+  		<div class="ratingspost-div">
+	  		<div class="ratingspost-content-div">
+	  			<div id="twistsplit">
+	  				<img src="TwistSplit.png">
+	  				
+	  			</div>
+	  			<img src="YourNameTitle.jpg" id="mediatitlecard">
+	  			<div class="ratingspost-headerdiv">
+					<p class="header-text" id="ratingspost-user">plagerized</p>
+					<p class="header-text" id="ratingspost-constanttext">rated •</p>
+					<p class="header-text" id="ratingspost-mediatitle">Kimi No Nawa</p>
+				</div>
+	  			<div class="ratingspost-maindiv" style="background-image:url('YourNameBackdrop.jpg')">
+	  				<div id="posted-score">
+	  					<p>32</p>
+	  				</div>
+	  			</div>
+	  			<div class="ratingspost-sidediv">
+	  				<div id="post-listofsliders-div">
+	  					<ul id="post-listofsliders">
+	  						<li>
+	  							<p class="post-individual-section">Initial: </p> <p class="post-individual-rating">6</p>
+	  							<input type="range" name="slider" min="0" max="10" value="5" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  						<li>
+	  							<p class="post-individual-section">Writing: </p> <p class="post-individual-rating">5</p>
+	  							<input type="range" name="slider" min="0" max="10" value="9" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  						<li>
+	  							<p class="post-individual-section">Art Style: </p> <p class="post-individual-rating">9</p>
+	  							<input type="range" name="slider" min="0" max="10" value="5" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  						<li>
+	  							<p class="post-individual-section">Animation: </p> <p class="post-individual-rating">10</p>
+	  							<input type="range" name="slider" min="0" max="10" value="3" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  						<li>
+	  							<p class="post-individual-section">Music: </p> <p class="post-individual-rating">9</p>
+	  							<input type="range" name="slider" min="0" max="10" value="7" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  					</ul>
+	  				</div>
+	  			</div>
+	  		</div>
+		</div>
+		<div class="ratingspost-div">
+	  		<div class="ratingspost-content-div">
+	  			<div id="twistsplit">
+	  				<img src="TwistSplit.png">
+	  				
+	  			</div>
+	  			<img src="BLANK_ICON.png" id="mediatitlecard">
+	  			<div class="ratingspost-headerdiv">
+					<p class="header-text" id="ratingspost-user">sS0k0</p>
+					<p class="header-text" id="ratingspost-constanttext">rated •</p>
+					<p class="header-text" id="ratingspost-mediatitle">Howl's Moving Castle</p>
+				</div>
+	  			<div class="ratingspost-maindiv" style="background-image:url('HowlsMovingCastleBackdrop.jpg')">
+	  				<div id="posted-score">
+	  					<p>43</p>
+	  				</div>
+	  			</div>
+	  			<div class="ratingspost-sidediv">
+	  				<div id="post-listofsliders-div">
+	  					<ul id="post-listofsliders">
+	  						<li>
+	  							<p class="post-individual-section">Initial: </p> <p class="post-individual-rating">9</p>
+	  							<input type="range" name="slider" min="0" max="10" value="5" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  						<li>
+	  							<p class="post-individual-section">Writing: </p> <p class="post-individual-rating">8</p>
+	  							<input type="range" name="slider" min="0" max="10" value="9" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  						<li>
+	  							<p class="post-individual-section">Art Style: </p> <p class="post-individual-rating">9</p>
+	  							<input type="range" name="slider" min="0" max="10" value="5" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  						<li>
+	  							<p class="post-individual-section">Animation: </p> <p class="post-individual-rating">8</p>
+	  							<input type="range" name="slider" min="0" max="10" value="3" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  						<li>
+	  							<p class="post-individual-section">Music: </p> <p class="post-individual-rating">9</p>
+	  							<input type="range" name="slider" min="0" max="10" value="7" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  					</ul>
+	  				</div>
+	  			</div>
+	  		</div>
+		</div>
+		<div class="ratingspost-div">
+	  		<div class="ratingspost-content-div">
+	  			<div id="twistsplit">
+	  				<img src="TwistSplit.png">
+	  				
+	  			</div>
+	  			<img src="BLANK_ICON.png" id="mediatitlecard">
+	  			<div class="ratingspost-headerdiv">
+					<p class="header-text" id="ratingspost-user">dengbruh</p>
+					<p class="header-text" id="ratingspost-constanttext">rated •</p>
+					<p class="header-text" id="ratingspost-mediatitle">Django Unchained</p>
+				</div>
+	  			<div class="ratingspost-maindiv" style="background-image:url('DjangoUnchainedBackdrop.jpg')">
+	  				<div id="posted-score">
+	  					<p>38</p>
+	  				</div>
+	  			</div>
+	  			<div class="ratingspost-sidediv">
+	  				<div id="post-listofsliders-div">
+	  					<ul id="post-listofsliders">
+	  						<li>
+	  							<p class="post-individual-section">Initial: </p> <p class="post-individual-rating">8</p>
+	  							<input type="range" name="slider" min="0" max="10" value="5" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  						<li>
+	  							<p class="post-individual-section">Writing: </p> <p class="post-individual-rating">9</p>
+	  							<input type="range" name="slider" min="0" max="10" value="9" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  						<li>
+	  							<p class="post-individual-section">Set Design: </p> <p class="post-individual-rating">8</p>
+	  							<input type="range" name="slider" min="0" max="10" value="5" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  						<li>
+	  							<p class="post-individual-section">Videography: </p> <p class="post-individual-rating">8</p>
+	  							<input type="range" name="slider" min="0" max="10" value="3" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  						<li>
+	  							<p class="post-individual-section">Music: </p> <p class="post-individual-rating">6</p>
+	  							<input type="range" name="slider" min="0" max="10" value="7" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  					</ul>
+	  				</div>
+	  			</div>
+	  		</div>
+		</div>
+		<div class="ratingspost-div">
+	  		<div class="ratingspost-content-div">
+	  			<div id="twistsplit">
+	  				<img src="TwistSplit.png">
+	  				
+	  			</div>
+	  			<img src="BLANK_ICON.png" id="mediatitlecard">
+	  			<div class="ratingspost-headerdiv">
+					<p class="header-text" id="ratingspost-user">jaymzly</p>
+					<p class="header-text" id="ratingspost-constanttext">rated •</p>
+					<p class="header-text" id="ratingspost-mediatitle">Interstellar</p>
+				</div>
+	  			<div class="ratingspost-maindiv" style="background-image:url('InterstellarBackdrop.jpg')">
+	  				<div id="posted-score">
+	  					<p>34</p>
+	  				</div>
+	  			</div>
+	  			<div class="ratingspost-sidediv">
+	  				<div id="post-listofsliders-div">
+	  					<ul id="post-listofsliders">
+	  						<li>
+	  							<p class="post-individual-section">Initial: </p> <p class="post-individual-rating">7</p>
+	  							<input type="range" name="slider" min="0" max="10" value="5" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  						<li>
+	  							<p class="post-individual-section">Writing: </p> <p class="post-individual-rating">7</p>
+	  							<input type="range" name="slider" min="0" max="10" value="9" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  						<li>
+	  							<p class="post-individual-section">Set Design: </p> <p class="post-individual-rating">9</p>
+	  							<input type="range" name="slider" min="0" max="10" value="5" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  						<li>
+	  							<p class="post-individual-section">Videography: </p> <p class="post-individual-rating">9</p>
+	  							<input type="range" name="slider" min="0" max="10" value="3" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  						<li>
+	  							<p class="post-individual-section">Music: </p> <p class="post-individual-rating">9</p>
+	  							<input type="range" name="slider" min="0" max="10" value="7" class="post-slider my-unhighlighted-slider" step="1" disabled="disabled">
+	  						</li>
+	  					</ul>
+	  				</div>
+	  			</div>
+	  		</div>
+		</div>
+  	</div>
+
+  	<div id="ad-feed">
+  		<div class="community-button" id="create-group-button"><p>Create Group</p><div id="create-group-plus"><i class="fas fa-plus"></i></div></div>
+  		<div class="standard-side-box subbox" id="mygroups-side-box">
+  			<div class="side-box-title">
+  				<p> MY GROUPS </p>
+  			</div>
+  			<ul class="side-groups-list">
+  				<a href="index.html"><li><img><p>The Foundlings</p>
+  						 <p class="community-stats">666 Members</p></li></a>
+  				<a href="index.html"><li><img><p>One Piece Crew</p>
+  						 <p class="community-stats">420 Members</p></li></a>
+  				<a href="index.html"><li><img><p>UBC</p>
+  						 <p class="community-stats">666 Members</p></li></a>
+  				<a href="index.html"><li><img><p>ssokos ttokos</p>
+  						 <p class="community-stats">666 Members</p></li></a>
+  				<a href="index.html"><li><img src="AOT-S4-poster.jpg"><p>AOT for me</p>
+  						 <p class="community-stats">699 Members</p></li></a>
+  				<a href="index.html"><li><img><p>AOT not for me</p>
+  						 <p class="community-stats">123 Members</p></li></a>
+  				<a href="index.html"><li><img><p>AOT really long title tester for me</p>
+  						 <p class="community-stats">666 Members</p></li></a>
+  				<a href="index.html"><li><img><p>AOT really long title tester for me</p>
+  						 <p class="community-stats">567 Members</p></li></a>
+  			</ul>
+  		</div>
+  		<div class="standard-side-box subbox">
+  			<div class="side-box-title">
+  				<p> TOP GROUPS </p>
+  			</div>
+  			<ol class="side-groups-list" id="ranked-groups-list">
+  				<a href="index.html"><li><span>1</span><img><p>The Foundlings</p>
+  						 <p class="community-stats">666 Members</p></li></a>
+  				<a href="index.html"><li><span>2</span><img><p>One Piece Crew</p>
+  						 <p class="community-stats">420 Members</p></li></a>
+  				<a href="index.html"><li><span>3</span><img><p>UBC</p>
+  						 <p class="community-stats">666 Members</p></li></a>
+  				<a href="index.html"><li><span>4</span><img><p>ssokos ttokos</p>
+  						 <p class="community-stats">666 Members</p></li></a>
+  				<a href="index.html"><li><span>5</span><img src="AOT-S4-poster.jpg"><p>AOT for me</p>
+  						 <p class="community-stats">699 Members</p></li></a>
+  			</ol>
+  		</div>
+  		<div class="standard-side-box subbox">
+  			<div class="side-box-title">
+  				<p> TRENDING GROUPS </p>
+  			</div>
+  			<ul class="side-groups-list">
+  				<a href="index.html"><li><img><p>The Foundlings</p>
+  						 <p class="community-stats">666 Members</p></li></a>
+  				<a href="index.html"><li><img><p>One Piece Crew</p>
+  						 <p class="community-stats">420 Members</p></li></a>
+  				<a href="index.html"><li><img><p>UBC</p>
+  						 <p class="community-stats">666 Members</p></li></a>
+  				<a href="index.html"><li><img><p>ssokos ttokos</p>
+  						 <p class="community-stats">666 Members</p></li></a>
+  				<a href="index.html"><li><img src="AOT-S4-poster.jpg"><p>AOT for me</p>
+  						 <p class="community-stats">699 Members</p></li></a>
+  			</ul>
+  		</div>
+  		<div class="standard-side-box subbox" id="recommended-list">
+  			<div class="side-box-title">
+  				<p> RECOMMENDED FRIENDS </p>
+  			</div>
+  			<ul class="side-groups-list">
+  				<a href="index.html"><li><img><p>denbruh</p>
+  						 <p class="community-stats">666 Followers</p></li></a>
+  				<a href="index.html"><li><img><p>Plagerized</p>
+  						 <p class="community-stats">420 Followers</p></li></a>
+  				<a href="index.html"><li><img src="mikasa weeb.jpg"><p>SSOKO</p>
+  						 <p class="community-stats">69 420 Followers</p></li></a>
+  				<a href="index.html"><li><img><p>mr ya</p>
+  						 <p class="community-stats">666 Followers</p></li></a>
+  				<a href="index.html"><li><img src="AOT-S4-poster.jpg"><p>yo mama</p>
+  						 <p class="community-stats">699 Followers</p></li></a>
+  				<a href="index.html"><li><img src="mikasa weeb.jpg"><p>SSOKO</p>
+  						 <p class="community-stats">69 420 Followers</p></li></a>
+  				<a href="index.html"><li><img><p>mr ya</p>
+  						 <p class="community-stats">666 Followers</p></li></a>
+  				<a href="index.html"><li><img src="AOT-S4-poster.jpg"><p>yo mama</p>
+  						 <p class="community-stats">699 Followers</p></li></a>
+  			</ul>
+  		</div>
+  	</div>
+
+  </div> 
+
+</body> 
+
+</html>

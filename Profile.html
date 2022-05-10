@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+	<title>Slider</title>
+
+	<link type="text/css" rel="stylesheet" href="StyleSheet.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	
+	<script src="jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="JavaScriptSheet.js"></script>
+</head>
+
+<body>
+	<!--This is for the Header-->
+		<div class="header-wrapper"> 
+			<header>
+				<div class="sliderlogo">
+					<a id="logo" href="index.html"><img src="sliderlogo.png" alt="Slider Logo"></a>
+				</div>
+
+				<p id="slider-title">Slider</p>
+
+			<!-- THIS IS FOR THE TABS MENU -->
+					<nav class="dropdown-menu">
+						<ul class="nav-links">
+							<li id="not-highlighted-page2"><a href="index.html">Browse</a></li>
+							
+							<li id="not-highlighted-page1"><a href="Slidings.html">Slidings</a></li>
+
+							<li id="not-highlighted-page3"><a href="Community.html">Community</a></li>
+						</ul>
+					</nav>
+
+					<nav class="search-profile">
+						
+						<div class="search-box">
+							<input class="search-text" type="text" name="" placeholder="Movies, Shows, People">
+
+							<a class="search-btn" href="#"><i class="fas fa-search" id="actual-search-icon"></i></a>
+
+						</div>
+
+						<ul class="profile-icon">
+							<li id="profile-icon"><a href="Profile.html"><i class="fas fa-user fa-sm" id="actual-profile-icon"></i></a>
+								<ul id="profile-dropdown-border">
+									<li><a href="#">Account</a></li>
+									<li><a href="#">Friends</a></li>
+									<li><a href="Settings.html">Settings</a></li>
+									<li><a href="About.html">About Slider</a></li>
+								</ul>
+							</li>
+						</ul>
+
+					</header>
+		</div>
+
+
+
+<!-- THIS IS FOR THE PROFILE -->
+	<div class="profile-background">
+		<!-- Profile Top Content -->
+			<div id="main-user-content">
+				<a href=# id="profile-picture">
+					<i class="fas fa-user" id="no-profile-pic"></i>
+					<div id="tooltip-profile">
+						<p>SELECT AN AVATAR!</p>
+					</div>
+				</a><div id="country-flag">
+					<a class="material-icons">
+						library_add
+					</a>
+					<div id="tooltip-flair">
+						<p>SHOW YOUR FLAIR!</p>
+					</div>
+				</div>
+
+				<div id="wrap-beside-prof">
+
+					<div id="username-header">
+						<p>sS0k0</p>
+					</div><div id ="user-friends">
+						<a href=#><span>Friends</span><span>0</span></a><a id="user-groups" href=#><span>Groups</span><span>0</span></a>
+						<a href="Slidings.html"><span>Slidings</span><span>0</span></a>
+					</div>
+
+					<div id="user-fullname">
+						<p>Sasha Sooperdupo</p>
+					</div>
+
+					<textarea id="description-body" type="text" spellcheck="false" placeholder="Update your status!..."></textarea>
+				</div>
+
+				<div id="user-sliders">
+					<div class="profileSlideContainer">
+					<ul>
+						<li class= "profileSliderMenu" id = "profileWriting">
+
+							<h1 id="Writing-Heading">WRITING</h1>
+							<input type="range" name="slider" min="0" max="10" value="5" class="my-slider my-unhighlighted-slider" step="1" id="Writing-Slider">
+							
+						</li>
+						<li class="profileSliderMenu" id="profilePlot">
+
+							<h1 id="Plot-Heading">PLOT</h1>
+							<input type="range" name="slider" min="0" max="10" value="5" class="my-slider my-unhighlighted-slider" step="1" id="Plot-Slider">
+							
+						</li>
+						<li class="profileSliderMenu" id="profileArtStyle">
+		
+							<h1 id="Art-Style-Heading">ART STYLE</h1>
+							<input type="range" name="slider" min="0" max="10" value="5" class="my-slider my-unhighlighted-slider" step="1" id="Art-Style-Slider">
+												
+						</li>
+						<li class="profileSliderMenu" id="profileAnimation">
+
+							<h1 id="Animation-Heading">ANIMATION</h1>
+							<input type="range" name="slider" min="0" max="10" value="5" class="my-slider my-unhighlighted-slider" step="1" id="Animation-Slider">	
+										
+						</li>
+						<li class="profileSliderMenu" id="profileMusic">
+
+							<h1 id="Music-Heading">MUSIC</h1>
+							<input type="range" name="slider" min="0" max="10" value="5" class="my-slider my-unhighlighted-slider" step="1" id="Music-Slider">	
+
+						</li>
+					</ul>
+				</div> 
+				</div>
+			</div>
+		<!-- Recent Ratings -->
+			<div id="outer-recent">
+				<!-- Very cool row -->
+				<div class="item-title-box rows-titles" id="profile-version">
+					<p class="item-title-text" id="rows-titles-text">RECENT SLIDINGS</p>
+				</div>
+				<div class="row-box" id="profile-row">
+					<div class="row">
+						<div class="row-wrapper">
+							<div class="row-item recent-row-item">
+									<a id="first-item" href="MovieInfo.html">
+										<figure class="thumbnail-wrap">
+											<img src="game of thrones poster (1102x1500).jpg" alt="filler">
+										</figure>
+									</a>
+									<div class="sidebar recent-sidebar">
+										<p id="recent-rating-score">42.4<span id="between-bar" style="color: black">-</span><span style="color: #877F7D">36.1</span></p>
+										<div id="medal-recent"> 
+											<img src="SilverMedal.png"> 
+										</div>
+										<p id="recent-view">2w 3d</p>
+									</div>
+							</div>
+							<div class="row-item recent-row-item">
+									<a id="first-item" href="MovieInfo.html">
+										<figure class="thumbnail-wrap">
+											<img src="game of thrones poster (1102x1500).jpg" alt="filler">
+										</figure>
+									</a>
+									<div class="sidebar recent-sidebar">
+										<p id="recent-rating-score">42.4<span id="between-bar" style="color: black">-</span><span style="color: #877F7D">36.1</span></p>
+										<div id="medal-recent"> 
+											<img src="SilverMedal.png"> 
+										</div>
+										<p id="recent-view">2w 3d</p>
+									</div>
+							</div>
+							<div class="row-item recent-row-item">
+									<a id="first-item" href="MovieInfo.html">
+										<figure class="thumbnail-wrap">
+											<img src="game of thrones poster (1102x1500).jpg" alt="filler">
+										</figure>
+									</a>
+									<div class="sidebar recent-sidebar">
+										<p id="recent-rating-score">42.4<span id="between-bar" style="color: black">-</span><span style="color: #877F7D">36.1</span></p>
+										<div id="medal-recent"> 
+											<img src="SilverMedal.png"> 
+										</div>
+										<p id="recent-view">2w 3d</p>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- Anderson shit -->
+			<div class="rankings-title-divPPTR">
+				<div class="item-title-box" id="my-top-rankings-title-box">
+					<p class="item-title-text" id="rankings-title-text">TOP 3 SLIDINGS</p>
+				</div>
+				
+			</div>
+			<div class="rankings-table-div" id="my-top-rankings-table-div">
+					<table id="ranking-table">
+						<thead>
+							<tr class="tableRow" id="table-header">
+								<th id="ranknumhead"></th>
+								<th id="ranking-type"><div class="headerTitlesDivPPTR" id="image-headerPPTR"></div></th>
+								<th id="ranking-initial-rating"><div class="headerTitlesDivPPTR" id="rawscore-title">RAW SCORE</div></th>
+								<th id="ranking-writing"><div class="headerTitlesDivPPTR" id="writing-title">WRITING</div></th>
+								<th id="ranking-art-style"><div class="headerTitlesDivPPTR" id="artstyle-design-title">ART STYLE DESIGN</div></th>
+								<th id="ranking-animation"><div class="headerTitlesDivPPTR" id="animation-cinematography-title">ANIMATION CINEMATOGRAPHY</div></th>
+								<th id="ranking-music"><div class="headerTitlesDivPPTR" id="music-title">MUSIC</div></th>
+								<th id="ranking-total"><div class="headerTitlesDivPPTR" id="total-title">TOTAL</div></th>
+							</tr>
+						</thead>
+						<tbody id="rankings-table-body">
+							<tr class="tableRow">
+
+								<td class="ranknum"><p class="rankactualnumber">1</p></td>
+
+								<td class="col1 row1 row-odd"><img src="LaLaLandPoster.jpg"></td>
+
+								<td class="col2 row1 row-odd">
+									<div class="elemcontent">
+										10
+									</div>
+								</td>
+
+								<td class="col3 row1 row-odd">
+									<div class="elemcontent">
+										10
+									</div>
+								</td>
+
+								<td class="col4 row1 row-odd">
+									<div class="elemcontent">
+										9
+									</div>
+								</td>
+
+								<td class="col5 row1 row-odd">
+									<div class="elemcontent">
+										9	
+									</div>
+								</td>
+
+								<td class="col6 row1 row-odd">
+									<div class="elemcontent">
+										10
+									</div>
+								</td>
+
+								<td class="col7 row1 row-odd"><div class="unadjustedScore">48</div><div id="score-divider">|</div><div class="adjustedScore">48</div></td>
+
+							</tr>
+
+							<tr class="tableRow">
+
+								<td class="ranknum"><p class="rankactualnumber">2</p></td>
+
+								<td class="col1 row2 row-even"><img src="MadMaxFuryRoadPoster.jpg"></td>
+
+								<td class="col2 row2 row-even">
+									<div class="elemcontent">
+										9
+									</div>
+								</td>
+
+								<td class="col3 row2 row-even">
+									<div class="elemcontent">
+										7
+									</div>
+								</td>
+								
+								<td class="col4 row2 row-even">
+									<div class="elemcontent">
+										10
+									</div>
+								</td>
+
+								<td class="col5 row2 row-even">
+									<div class="elemcontent">
+										9
+									</div>
+								</td>
+
+								<td class="col6 row2 row-even">
+									<div class="elemcontent">
+										6
+									</div>
+								</td>
+
+								<td class="col7 row2 row-even"><div class="unadjustedScore">41</div><div id="score-divider">|</div><div class="adjustedScore">41</div></td>
+
+							</tr>
+
+							<tr class="tableRow">
+
+								<td class="ranknum"><p class="rankactualnumber">3</p></td>
+
+								<td class="col1 row3 row-odd"><img src="GurrenLagannPoster.jpg"></td>
+
+								<td class="col2 row3 row-odd">
+									<div class="elemcontent">
+										8
+									</div>
+								</td>
+
+								<td class="col3 row3 row-odd">
+									<div class="elemcontent">
+										6
+									</div>
+								</td>
+								
+								<td class="col4 row3 row-odd">
+									<div class="elemcontent">
+										8
+									</div>
+								</td>
+
+								<td class="col5 row3 row-odd">
+									<div class="elemcontent">
+										9
+									</div>
+								</td>
+
+								<td class="col6 row3 row-odd"><div class="elemcontent">
+										8
+									</div>
+								</td>
+
+								<td class="col7 row3 row-odd"><div class="unadjustedScore">39</div><div id="score-divider">|</div><div class="adjustedScore">39</div></td>
+
+							</tr>
+
+						</tbody>
+						
+						
+					</table>
+			</div>
+
+			<div class="awardsdivdiv">
+				<div class="awardstitlediv"><p>A</p><p>w</p><p>a</p><p>r</p><p>d</p><p>s</p></div>
+				<div class="awardsdiv">
+					<div id="saward"><img class="awardsposter" src="LoveIsWarPoster.jpg"><img class="awardsmedals" src="silverMedal.png"></div>
+					<div id="awardsdivider"></div>
+					<div id="platinumaward"><img class="awardsposter" src="ReZeroPoster.jpg"><img class="awardsmedals" src="GoldMedal.png"></div>
+					<div id="goldaward"><img class="awardsposter" src="ShittsCreekPoster.jpg"><img class="awardsmedals" src="silverMedal.png"></div>
+					<div id="silveraward"><img class="awardsposter" src="DemonSlayerPoster.jpg"><img class="awardsmedals" src="BronzeMedal.png"></div>
+				</div>
+			</div>
+			<div class="profilestats">
+
+				<div class="stattitle" id="movieswatched"><p>Movies Watched: 123</p></div>
+				<div class="stattitle" id="showswatched"><p>Shows Watched: 27</p></div>
+				<div class="stattitle" id="animewatched"><p>Anime Watched: 36</p></div>
+				<div class="stattitle" id="averagerating"><p>Average Rating: 6.2</p></div>
+				<div class="stattitle" id="favouritegenre"><p>Favourite Genre: Drama</p></div>
+				
+			</div>
+	</div>
+
+<!-- List of contacts pop-up --> 
+	<div class="user-list">
+		<div class="user-list-title">
+			<p>FRIENDS</p>
+		</div>
+		<div class="user-list-main">
+			<div class="user-list-item">
+				<img src="The-Witcher.jpg">
+				<p class="list-item-name">Billy Bob</p>
+				<button>
+					<p>Remove</p>
+				</button>
+			</div>
+			<div class="user-list-item">
+				<img src="The-Witcher.jpg">
+				<p class="list-item-name">Billy BobLong andy</p>
+				<button>
+					<p>Remove</p>
+				</button>
+			</div>
+			<div class="user-list-item">
+				<img src="The-Witcher.jpg">
+				<p class="list-item-name">Billy Bobtrenenne</p>
+				<button>
+					<p>Remove</p>
+				</button>
+			</div>
+			<div class="user-list-item">
+				<img src="The-Witcher.jpg">
+				<p class="list-item-name">Billy Bob</p>
+				<button>
+					<p>Remove</p>
+				</button>
+			</div>
+			<div class="user-list-item">
+				<img src="The-Witcher.jpg">
+				<p class="list-item-name">Billy Bob</p>
+				<button>
+					<p>Remove</p>
+				</button>
+			</div>
+			<div class="user-list-item">
+				<img src="The-Witcher.jpg">
+				<p class="list-item-name">Billy Bob</p>
+				<button>
+					<p>Remove</p>
+				</button>
+			</div>
+			<div class="user-list-item">
+				<img src="The-Witcher.jpg">
+				<p class="list-item-name">Billy Bob</p>
+				<button>
+					<p>Remove</p>
+				</button>
+			</div>
+			<div class="user-list-item">
+				<img src="The-Witcher.jpg">
+				<p class="list-item-name">Billy Bob</p>
+				<button>
+					<p>Remove</p>
+				</button>
+			</div>
+			<div class="user-list-item">
+				<img src="The-Witcher.jpg">
+				<p class="list-item-name">Billy Bob</p>
+				<button>
+					<p>Remove</p>
+				</button>
+			</div>
+			<div class="user-list-item">
+				<img src="The-Witcher.jpg">
+				<p class="list-item-name">Billy Bob</p>
+				<button>
+					<p>Remove</p>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="overlay-back">
+	</div>
+
+</body>
+
+
+</html>
